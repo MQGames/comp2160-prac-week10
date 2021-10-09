@@ -11,6 +11,7 @@ public class ControlPuck : MonoBehaviour
 
     void Update()
     {
+        // ERROR: You should not move a non-kinematic Rigidbody using Transform
         Vector3 position = MousePosition();
         transform.position = position;
     }
